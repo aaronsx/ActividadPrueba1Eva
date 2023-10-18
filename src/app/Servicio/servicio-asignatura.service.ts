@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Asignatura } from '../asignatura';
-import { ASUGNATURAS } from '../mock-asignaturas';
+import { Asignatura } from '../modelo/asignatura';
+import { ASUGNATURAS } from '../modelo/mock-asignatura';
 
 @Injectable({
   providedIn: 'root'

@@ -1,7 +1,11 @@
-<h2>ASIGNATURAS</h2>
-<ul class="ASIGNATURAS">
-  <li *ngFor="let asignatura of asignaturas">  
-   
+
+<ul id="asignatura">
+  <h2>Asignaturas:</h2>
+  <li *ngFor="let asignatura of asignaturas"> 
+    <tr>
+      <app-asignatura-details [asignaturas]="asignatura"></app-asignatura-details>
+    </tr> 
+    
   </li>
 </ul>
-<app-asignatura-detail></app-asignatura-detail>
+

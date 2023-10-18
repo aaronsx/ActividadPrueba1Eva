@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pregunta } from '../pregunta';
+import { Pregunta } from '../modelo/pregunta';
 import { ServicioPreguntasService } from '../Servicio/servicio-preguntas.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ServicioPreguntasService } from '../Servicio/servicio-preguntas.service
   styleUrls: ['./pregunta.component.css']
 })
 export class PreguntaComponent {
-  preguntas: Pregunta[] = [];
+  preguntas?: Pregunta[] ;
   constructor(private PregunService: ServicioPreguntasService) { }
   //Resive el observable de hero.service.ts (getHeroes(): Observable<Hero[]>)
   getPregunta(): void {
@@ -18,5 +18,9 @@ export class PreguntaComponent {
   ngOnInit(): void {
     
     this.getPregunta();
+  }
+  pregunta?:Pregunta;
+  darPregunta(pregunta:Pregunta):void{
+    this.pregunta=pregunta;
   }
 }

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Pregunta } from '../pregunta';
+import { Pregunta } from 'src/app/modelo/pregunta';
 
 @Component({
   selector: 'app-pregunta-detail',
@@ -7,5 +7,5 @@ import { Pregunta } from '../pregunta';
   styleUrls: ['./pregunta-detail.component.css']
 })
 export class PreguntaDetailComponent {
-  @Input() pregu?: Pregunta;
+  @Input() preguntas?:Pregunta;
 }

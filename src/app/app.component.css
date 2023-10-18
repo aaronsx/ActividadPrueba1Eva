@@ -1,0 +1,32 @@
+#Url
+{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#pregunta
+{
+    
+    color: white;
+    background-color: #5b9bd5;
+    padding: 7px 12px;
+    margin: 10px;
+}
+#asignatura
+{
+    background-color:  #ed7d31;
+    color: white;
+    padding: 7px 12px;
+    margin: 10px;
+}
+
+#linea
+{
+    border: 1px solid black;
+    margin-bottom: 20px;
+   
+}

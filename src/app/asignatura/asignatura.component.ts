@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Asignatura } from '../asignatura';
+import { Asignatura } from '../modelo/asignatura';
 import { ServicioAsignaturaService } from '../Servicio/servicio-asignatura.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ServicioAsignaturaService } from '../Servicio/servicio-asignatura.servi
   styleUrls: ['./asignatura.component.css']
 })
 export class AsignaturaComponent {
-  asignaturas: Asignatura[] = [];
+  asignaturas?: Asignatura[] ;
   constructor(private AsignService: ServicioAsignaturaService) { }
   //Resive el observable de hero.service.ts (getHeroes(): Observable<Hero[]>)
   getAsignatura(): void {
