@@ -5,3 +5,7 @@
 h2{
     text-align: center;
 }
+p.colorSelecionado
+{
+    background-color: rgb(0, 255, 136);
+}

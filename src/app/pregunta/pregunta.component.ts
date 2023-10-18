@@ -9,6 +9,7 @@ import { ServicioPreguntasService } from '../Servicio/servicio-preguntas.service
 })
 export class PreguntaComponent {
   preguntas?: Pregunta[] ;
+  preguntaSelect?:Pregunta;
   constructor(private PregunService: ServicioPreguntasService) { }
   //Resive el observable de hero.service.ts (getHeroes(): Observable<Hero[]>)
   getPregunta(): void {
@@ -19,8 +20,8 @@ export class PreguntaComponent {
     
     this.getPregunta();
   }
-  pregunta?:Pregunta;
+  
   darPregunta(pregunta:Pregunta):void{
-    this.pregunta=pregunta;
+    this.preguntaSelect=pregunta;
   }
 }

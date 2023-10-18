@@ -6,15 +6,17 @@
       <h2>{{nombre}}</h2>
     </div>
     <nav >
-      <div class="col-12" style="margin-left: 300px;">
-        <button type="button" id="pregunta" class="btn  botones" routerLink="/Pregunta">Preguntas</button>
-        <button type="button" id="asignatura" class="btn  botones"  routerLink="/Asignatura">Asignatura</button>
-      </div>
+      <label class="btn btn-secondary" id="pregunta" style="margin-left: 300px;">
+        <input type="radio" name="options" id="option2" autocomplete="off"  routerLink="/Pregunta"> Preguntas
+      </label>
+      <label class="btn btn-secondary" id="asignatura">
+        <input type="radio" name="options" id="option2" autocomplete="off"  routerLink="/Asignatura"> Asignaturas
+      </label>
     </nav>
     </div>
       <router-outlet></router-outlet>
   </div>
-
+ 
 
 
   

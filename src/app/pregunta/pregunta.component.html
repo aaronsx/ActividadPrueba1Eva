@@ -1,10 +1,12 @@
-<div >
-    <div id="pregunta">
-        <h2>Preguntas:</h2>
-    <div *ngFor="let pregunta of preguntas">
-        <p (click)="darPregunta(pregunta)">{{pregunta.pregunta}}</p> 
+<div class="row justify-content-center" style="margin-top: 20px">
+  <div class="col-8 border-2" id="pregunta">
+    <div class="text-center" style="margin-top: 10px">
+      <h2>Preguntas:</h2>
+      <div *ngFor="let pregunta of preguntas">
+        <p (click)="darPregunta(pregunta)" [class.colorSelecionado]="pregunta===preguntaSelect">{{ pregunta.pregunta }}</p>
+      </div>
     </div>
-    </div>
-    
-    <app-pregunta-detail [preguntas]="pregunta" ></app-pregunta-detail>
+    <app-pregunta-detail [preguntas]="preguntaSelect"></app-pregunta-detail>
+  </div>
+  
 </div>
