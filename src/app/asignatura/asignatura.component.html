@@ -4,6 +4,7 @@
         <h2>Asignaturas</h2> 
       </div>
       <table >
+        <!--se recorre la lista asignaturas si existe y lo envia a la clase hija-->
         <tr *ngFor="let asignatura of asignaturas">
           <app-asignatura-details [asignaturas]="asignatura"></app-asignatura-details>
         </tr>

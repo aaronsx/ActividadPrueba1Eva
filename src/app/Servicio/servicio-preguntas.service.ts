@@ -8,12 +8,12 @@ import { PREGUNTAS } from '../modelo/mock-pregunta';
 })
 export class ServicioPreguntasService {
   
-
+  
   constructor() { }
   getPregunta(): Observable<Pregunta[]> {
     
    
-    //Devuelve el observable y lo envia a heroes.component.ts
+    //Devuelve el observable y lo envia a .component.ts
     return  of(PREGUNTAS);
   }
 }

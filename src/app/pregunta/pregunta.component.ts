@@ -11,7 +11,7 @@ export class PreguntaComponent {
   preguntas?: Pregunta[] ;
   preguntaSelect?:Pregunta;
   constructor(private PregunService: ServicioPreguntasService) { }
-  //Resive el observable de hero.service.ts (getHeroes(): Observable<Hero[]>)
+  //Resive el observable de .service.ts (getHeroes(): Observable<Hero[]>)
   getPregunta(): void {
     this.PregunService.getPregunta()
         .subscribe(preguntas => this.preguntas = preguntas);
@@ -20,7 +20,7 @@ export class PreguntaComponent {
     
     this.getPregunta();
   }
-  
+  //Metos para recoger la pregunta
   darPregunta(pregunta:Pregunta):void{
     this.preguntaSelect=pregunta;
   }

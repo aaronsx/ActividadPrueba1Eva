@@ -1,5 +1,5 @@
 import { Asignatura } from './asignatura';
-
+//Completamos una lista con el contenido 
 export const ASUGNATURAS: Asignatura[] = [
   {asignatura:"Diseño de Interfaces Web", siglasAsignatura:"DIW",profesores:"RFG"},
   {asignatura:"Desarrollo web en entorno servidor", siglasAsignatura:"DWS",profesores:"RFG"},

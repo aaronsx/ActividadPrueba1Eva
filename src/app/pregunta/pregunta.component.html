@@ -2,6 +2,7 @@
   <div class="col-8 border-2" id="pregunta">
     <div class="text-center" style="margin-top: 10px">
       <h2>Preguntas:</h2>
+      <!--se recorre la lista asignaturas si existe y la pregunta que selecciones llama a la hija-->
       <div *ngFor="let pregunta of preguntas">
         <p (click)="darPregunta(pregunta)" [class.colorSelecionado]="pregunta===preguntaSelect">{{ pregunta.pregunta }}</p>
       </div>

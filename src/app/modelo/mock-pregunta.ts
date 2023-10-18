@@ -1,5 +1,5 @@
 import { Pregunta } from './pregunta';
-
+//Completamos una lista con el contenido
 export const PREGUNTAS: Pregunta[] = [
   {  pregunta: "¿Cómo se define TypeScript?", respuesta: " TypeScript es un lenguaje que agrega componentes de tipo estatico y otras funciones a JavaScript para ayudar al desarrollador para tener un código mas seguro,escalable y mantenible." },
   {  pregunta: "¿Cuál es la principal diferencia de TypeScript respecto de JavaScript?", respuesta: " La principal diferencia es que en TypeScript agrega tipado estático a JavaScript lo que le lleva  a ser mas seguro y mas facil de mantener en proyectos grandes y complejos" },
